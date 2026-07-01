@@ -1,0 +1,10 @@
+{
+  "available": true,
+  "shared_state_ok": true,
+  "query": "Redis shared cache evidence query",
+  "cached_response_from_second_instance": "shared response from instance A",
+  "score": 1.0,
+  "keys": [
+    "rl:cache:732298515b35"
+  ]
+}
