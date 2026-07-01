@@ -1,0 +1,41 @@
+{
+  "requests_per_scenario": 30,
+  "without_cache": {
+    "total_requests": 90,
+    "availability": 0.9889,
+    "error_rate": 0.0111,
+    "latency_p50_ms": 267.65,
+    "latency_p95_ms": 313.08,
+    "latency_p99_ms": 318.43,
+    "fallback_success_rate": 0.9808,
+    "cache_hit_rate": 0.0,
+    "circuit_open_count": 7,
+    "recovery_time_ms": null,
+    "estimated_cost": 0.03998,
+    "estimated_cost_saved": 0.0,
+    "scenarios": {
+      "primary_timeout_100": "pass",
+      "primary_flaky_50": "pass",
+      "all_healthy": "pass"
+    }
+  },
+  "with_cache": {
+    "total_requests": 90,
+    "availability": 0.9778,
+    "error_rate": 0.0222,
+    "latency_p50_ms": 265.3,
+    "latency_p95_ms": 306.48,
+    "latency_p99_ms": 313.13,
+    "fallback_success_rate": 0.9355,
+    "cache_hit_rate": 0.3778,
+    "circuit_open_count": 3,
+    "recovery_time_ms": 2230.3245067596436,
+    "estimated_cost": 0.02422,
+    "estimated_cost_saved": 0.034,
+    "scenarios": {
+      "primary_timeout_100": "fail",
+      "primary_flaky_50": "pass",
+      "all_healthy": "pass"
+    }
+  }
+}
